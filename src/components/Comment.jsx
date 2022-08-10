@@ -17,10 +17,10 @@ export function Comment() {
               >
                 Cerca de 1h atrás
               </time>
-              <button title="Deletar">
-                <Trash size={20} />
-              </button>
             </div>
+            <button title="Deletar">
+              <Trash size={24} />
+            </button>
           </header>
           <p>Muito bom, parabéns!</p>
         </div>
