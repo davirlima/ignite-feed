@@ -11,7 +11,7 @@ const posts = [
     author: {
       avatarUrl: "https://www.github.com/davirlima.png",
       name: "Davi Rodrigues de Lima",
-      role: "Web Developer",
+      role: "Developer Student",
     },
     content: [
       { type: "paragraph", content: "Olá, pessoal!" },
