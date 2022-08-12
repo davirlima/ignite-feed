@@ -22,7 +22,7 @@ const posts = [
       },
       { type: "link", content: "https://www.lipsum.com" },
     ],
-    publishedAt: new Date("2022-08-10 20:00:00"),
+    publishedAt: new Date("2022-08-10 10:00:00"),
   },
   {
     id: 2,
@@ -40,7 +40,7 @@ const posts = [
       },
       { type: "link", content: "https://www.lipsum.com" },
     ],
-    publishedAt: new Date("2022-08-11 20:00:00"),
+    publishedAt: new Date("2022-08-11 15:00:00"),
   },
 ];
 
