@@ -11,7 +11,10 @@ export function Comment(props) {
   const [likeCount, setLikeCount] = useState(0);
 
   function addLike() {
-    setLikeCount(likeCount + 1);
+    //Sempre que a atualização de um estado depender de seu valor anterior, é ideal que se faça dessa forma:
+    setLikeCount((oldLikeCount) => {
+      return oldLikeCount + 1;
+    });
   }
 
   return (
