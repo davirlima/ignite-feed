@@ -31,8 +31,12 @@ export function Post(props) {
     setNewCommentText("");
   }
 
-  function deleteComment(comment) {
-    console.log(`Devo remover o comentário: ${comment}`);
+  function deleteComment(commentToDelete) {
+    const commentsWithoutDeletedOne = comment.filter((comment) => {
+      return comment !== commentToDelete;
+    });
+
+    setComment(commentsWithoutDeletedOne);
   }
 
   return (
