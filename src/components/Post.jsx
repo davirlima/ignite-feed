@@ -21,6 +21,7 @@ export function Post(props) {
   //Criando um novo comentário com use State
   const [newCommentText, setNewCommentText] = useState("");
   function commentTextChange() {
+    event.target.setCustomValidity("");
     setNewCommentText(event.target.value);
   }
 
@@ -38,6 +39,12 @@ export function Post(props) {
 
     setComment(commentsWithoutDeletedOne);
   }
+
+  function createNewCommentInvalid() {
+    event.target.setCustomValidity("Este campo é obrigatório");
+  }
+
+  const isNewCommentEmpty = newCommentText.length == 0;
 
   return (
     <article className={styles.post}>
@@ -77,9 +84,14 @@ export function Post(props) {
           placeholder="Deixe um comentário"
           value={newCommentText}
           onChange={commentTextChange}
+          //Validação do form:
+          onInvalid={createNewCommentInvalid}
+          required={true}
         ></textarea>
         <footer>
-          <button type="submit">Publicar</button>
+          <button type="submit" disabled={isNewCommentEmpty}>
+            Publicar
+          </button>
         </footer>
       </form>
       <div className={styles.commentList}>
