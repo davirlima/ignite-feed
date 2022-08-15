@@ -31,6 +31,10 @@ export function Post(props) {
     setNewCommentText("");
   }
 
+  function deleteComment(comment) {
+    console.log(`Devo remover o comentário: ${comment}`);
+  }
+
   return (
     <article className={styles.post}>
       <header>
@@ -76,7 +80,13 @@ export function Post(props) {
       </form>
       <div className={styles.commentList}>
         {comment.map((comment) => {
-          return <Comment key={comment} content={comment} />;
+          return (
+            <Comment
+              key={comment}
+              content={comment}
+              onDeleteComment={deleteComment}
+            />
+          );
         })}
       </div>
     </article>
