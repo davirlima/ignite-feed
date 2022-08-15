@@ -1,5 +1,4 @@
 import { format, formatDistanceToNow } from "date-fns";
-import { set } from "date-fns/esm";
 import ptBR from "date-fns/locale/pt-BR";
 import { useState } from "react";
 import { Avatar } from "./Avatar.jsx";
@@ -53,10 +52,10 @@ export function Post(props) {
         <p>
           {props.content.map((line) => {
             if (line.type === "paragraph") {
-              return <p>{line.content}</p>;
+              return <p key={line.content}>{line.content}</p>;
             } else if (line.type === "link") {
               return (
-                <p>
+                <p key={line.content}>
                   <a href={line.content}>{line.content}</a>
                 </p>
               );
@@ -77,7 +76,7 @@ export function Post(props) {
       </form>
       <div className={styles.commentList}>
         {comment.map((comment) => {
-          return <Comment content={comment} />;
+          return <Comment key={comment} content={comment} />;
         })}
       </div>
     </article>
