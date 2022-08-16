@@ -1,11 +1,26 @@
 import { format, formatDistanceToNow } from "date-fns";
 import ptBR from "date-fns/locale/pt-BR";
-import { useState } from "react";
-import { Avatar } from "./Avatar.jsx";
-import { Comment } from "./Comment.jsx";
+import { ChangeEvent, FormEvent, InvalidEvent, useState } from "react";
+import { Avatar } from "./Avatar";
+import { Comment } from "./Comment";
 import styles from "./Post.module.css";
 
-export function Post(props) {
+interface PostProps {
+  publishedAt: Date;
+  author: {
+    name: string;
+    role: string;
+    avatarUrl: string;
+  };
+  content: [
+    {
+      type: "paragraph" | "link";
+      content: string;
+    }
+  ];
+}
+
+export function Post(props: PostProps) {
   // Formatando Date com a biblioteca date-fns
   const publishedDateFormatted = format(
     props.publishedAt,
@@ -20,19 +35,19 @@ export function Post(props) {
 
   //Criando um novo comentário com use State
   const [newCommentText, setNewCommentText] = useState("");
-  function commentTextChange() {
+  function commentTextChange(event: ChangeEvent<HTMLTextAreaElement>) {
     event.target.setCustomValidity("");
     setNewCommentText(event.target.value);
   }
 
-  const [comment, setComment] = useState([]);
-  function createNewComment() {
+  const [comment, setComment] = useState(["Legal demais!"]);
+  function createNewComment(event: FormEvent) {
     event.preventDefault();
     setComment([...comment, newCommentText]);
     setNewCommentText("");
   }
 
-  function deleteComment(commentToDelete) {
+  function deleteComment(commentToDelete: string) {
     const commentsWithoutDeletedOne = comment.filter((comment) => {
       return comment !== commentToDelete;
     });
@@ -40,7 +55,7 @@ export function Post(props) {
     setComment(commentsWithoutDeletedOne);
   }
 
-  function createNewCommentInvalid() {
+  function createNewCommentInvalid(event: InvalidEvent<HTMLTextAreaElement>) {
     event.target.setCustomValidity("Este campo é obrigatório");
   }
 

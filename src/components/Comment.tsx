@@ -3,7 +3,12 @@ import { ThumbsUp, Trash } from "phosphor-react";
 import { Avatar } from "./Avatar";
 import { useState } from "react";
 
-export function Comment(props) {
+interface CommentProps {
+  content: string;
+  onDeleteComment: (comment: string) => void;
+}
+
+export function Comment(props: CommentProps) {
   function deleteComment() {
     props.onDeleteComment(props.content);
   }
