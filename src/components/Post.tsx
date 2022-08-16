@@ -12,12 +12,10 @@ interface PostProps {
     role: string;
     avatarUrl: string;
   };
-  content: [
-    {
-      type: "paragraph" | "link";
-      content: string;
-    }
-  ];
+  content: {
+    type: string;
+    content: string;
+  }[];
 }
 
 export function Post(props: PostProps) {
