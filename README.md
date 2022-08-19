@@ -25,6 +25,31 @@ Esta é uma aplicação web de um escopo de um feed de uma rede social, com as f
   />
 </div>
 
+## Acesse a aplicação:
+
+<https://ignite-feed-gray.vercel.app/>
+
+## Se deseja executar o projeto localmente, realize os seguintes passos:
+
+*Obs:* Tenha o *Node.js v.16.17.0* instalado em sua máquina
+
+1.Clone o repositório em seu terminal com o comando ;
+ ~~~bash
+ git clone https://github.com/davirlima/ignite-feed.git
+ ~~~
+2. Instale as dependências com o comando:
+  ~~~bash
+  npm install
+  # ou
+  yarn install
+  ~~~
+3. Execute a aplicação com o comando:
+  ~~~bash
+  npm run dev
+  # ou
+  yarn dev
+  ~~~
+
 ## Interface:
 
 * Desktop e Laptop:
@@ -41,25 +66,3 @@ Esta é uma aplicação web de um escopo de um feed de uma rede social, com as f
   src="https://user-images.githubusercontent.com/97968740/185651198-2c773b8e-6e8c-4a72-b728-7efa13ecedb1.png"
   alt="Interfaca da Aplicação Ignite Feed em Mobile"
 />
-
-## Acesse a aplicação:
-
-<https://ignite-feed-gray.vercel.app/>
-
-## Se deseja abrir o projeto localmente, realize os seguintes passos:
-
-*Obs:* Tenha o *Node.js v.16.17.0* instalado em sua máquina
-
-1. Abra o diretório em seu terminal;
-2. Instale as dependências com o comando:
-  ~~~bash
-  npm install
-  # ou
-  yarn install
-  ~~~
-3. Execute a aplicação com o comando:
-  ~~~bash
-  npm run dev
-  # ou
-  yarn dev
-  ~~~
