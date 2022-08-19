@@ -33,17 +33,22 @@ Esta é uma aplicação web de um escopo de um feed de uma rede social, com as f
 
 *Obs:* Tenha o *Node.js v.16.17.0* instalado em sua máquina
 
-1.Clone o repositório em seu terminal com o comando ;
+1. Clone o repositório em seu terminal com o comando:
+
  ~~~bash
  git clone https://github.com/davirlima/ignite-feed.git
  ~~~
+ 
 2. Instale as dependências com o comando:
+
   ~~~bash
   npm install
   # ou
   yarn install
   ~~~
+  
 3. Execute a aplicação com o comando:
+
   ~~~bash
   npm run dev
   # ou
