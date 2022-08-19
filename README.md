@@ -52,14 +52,14 @@ Esta é uma aplicação web de um escopo de um feed de uma rede social, com as f
 
 1. Abra o diretório em seu terminal;
 2. Instale as dependências com o comando:
-  ~~~terminal
-  $ npm install
+  ~~~bash
+  npm install
   # ou
-  $ yarn install
+  yarn install
   ~~~
 3. Execute a aplicação com o comando:
-  ~~~terminal
-  $ npm run dev
+  ~~~bash
+  npm run dev
   # ou
-  $ yarn dev
+  yarn dev
   ~~~
