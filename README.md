@@ -25,6 +25,11 @@ Esta é uma aplicação web de um escopo de um feed de uma rede social, com as f
   />
 </div>
 
+## Bibliotecas:
+
+* Date-fns;
+* Phosphor Icons.
+
 ## Acesse a aplicação:
 
 <https://ignite-feed-gray.vercel.app/>
