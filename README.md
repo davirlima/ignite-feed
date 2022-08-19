@@ -13,20 +13,15 @@ Esta é uma aplicação web de um escopo de um feed de uma rede social, com as f
     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
     alt="Logo React"
   />
+  <img
+      height="50px"
+      src="https://vitejs.dev/logo-with-shadow.png"
+      alt="Logo Vitejs"
+  />
   <img 
     height="50px"
     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
     alt="Logo TypeScript"
-  />
-  <img
-      height="50px"
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-      alt="Logo HTML"
-  />
-  <img 
-    height="50px"
-    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" 
-    alt="Logo CSS"
   />
 </div>
 
