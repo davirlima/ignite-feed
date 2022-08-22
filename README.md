@@ -32,7 +32,7 @@ Esta é uma aplicação web de um escopo de um feed de uma rede social, com as f
 
 ## Acesse a aplicação:
 
-<https://ignite-feed-gray.vercel.app/>
+<https://ignite-feed-davirlima.vercel.app/>
 
 ## Se deseja executar o projeto localmente, realize os seguintes passos:
 
