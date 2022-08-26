@@ -38,16 +38,30 @@ export function Post(props: PostProps) {
     setNewCommentText(event.target.value);
   }
 
-  const [comment, setComment] = useState(["Legal demais!"]);
+  const [comment, setComment] = useState([
+    {
+      id: String(new Date("2022-08-10 20:00:00").getMilliseconds()),
+      content: "Legal demais!",
+      datePublished: new Date("2022-08-23 20:00:00"),
+    },
+  ]);
   function createNewComment(event: FormEvent) {
     event.preventDefault();
-    setComment([...comment, newCommentText]);
+    setComment([
+      ...comment,
+      {
+        id: String(new Date().getMilliseconds()),
+        content: newCommentText,
+        datePublished: new Date(),
+      },
+    ]);
     setNewCommentText("");
   }
 
-  function deleteComment(commentToDelete: string) {
+  function deleteComment(idOfCommentToDelete: string) {
+    console.log(comment, idOfCommentToDelete);
     const commentsWithoutDeletedOne = comment.filter((comment) => {
-      return comment !== commentToDelete;
+      return comment.id !== idOfCommentToDelete;
     });
 
     setComment(commentsWithoutDeletedOne);
@@ -111,8 +125,10 @@ export function Post(props: PostProps) {
         {comment.map((comment) => {
           return (
             <Comment
-              key={comment}
-              content={comment}
+              key={comment.id}
+              id={comment.id}
+              content={comment.content}
+              datePublished={comment.datePublished}
               onDeleteComment={deleteComment}
             />
           );

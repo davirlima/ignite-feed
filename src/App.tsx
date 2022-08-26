@@ -18,29 +18,11 @@ const posts = [
       {
         type: "paragraph",
         content:
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit esse, sed diam nonumy eirmod",
+          "Esse é o Ignite Feed, um protótipo de feed de redes sociais. Com as funções de adicionar, remover e dar likes em um comentário de um post. Testa aí! 😉",
       },
-      { type: "link", content: "https://www.lipsum.com" },
+      { type: "link", content: "https://github.com/davirlima/ignite-feed" },
     ],
     publishedAt: new Date("2022-08-10 10:00:00"),
-  },
-  {
-    id: 2,
-    author: {
-      avatarUrl: "https://www.github.com/rocketseat.png",
-      name: "Rocketseat",
-      role: "Education Institute",
-    },
-    content: [
-      { type: "paragraph", content: "Olá, pessoal!" },
-      {
-        type: "paragraph",
-        content:
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit esse, sed diam nonumy eirmod",
-      },
-      { type: "link", content: "https://www.lipsum.com" },
-    ],
-    publishedAt: new Date("2022-08-11 15:00:00"),
   },
 ];
 
