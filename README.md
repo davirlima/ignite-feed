@@ -1,13 +1,18 @@
+<div align="center">
+
+![igniteSimbol](https://user-images.githubusercontent.com/97968740/186955921-1b90c5cb-547d-40ab-ad9d-8ef4cc47fefc.svg)
+
 # Ignite Feed
 
-Esta é uma aplicação web de um escopo de um feed de uma rede social, com as funções:
-  * Adicionar um comentário em um Post;
-  * Remover o comentário criado;
-  * Aplaudir um comentário (deixar um like).
+Aplicação web de um protótipo de feed de uma rede social, utilizando *ReactJS*.
 
-## Tecnologias:
+:link: <https://ignite-feed-davirlima.vercel.app/> :link:
 
-<div style=display: inline-block>
+</div>
+
+## :heavy_check_mark: Tecnologias:
+
+<div>
   <img 
     height="50px"
     src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
@@ -25,20 +30,24 @@ Esta é uma aplicação web de um escopo de um feed de uma rede social, com as f
   />
 </div>
 
-## Bibliotecas:
+## :books: Bibliotecas:
 
-* Date-fns;
-* Phosphor Icons.
+* date-fns;
+* phosphor-icons.
 
-## Acesse a aplicação:
+## :hammer: Funcionalidades:
 
-<https://ignite-feed-davirlima.vercel.app/>
+Converter texto em:
 
-## Se deseja executar o projeto localmente, realize os seguintes passos:
+- **Adicionar um comentário em um Post;**
+- **Remover o comentário criado;**
+- **Aplaudir um comentário (deixar um Like).**
 
-*Obs:* Tenha o *Node.js v.16.17.0* instalado em sua máquina
+## :open_file_folder: Execute o projeto localmente
 
-1. Clone o repositório em seu terminal com o comando:
+:heavy_exclamation_mark: **Requisitos:** *Node.js v.16.17.0*
+
+1. Clone o repositório:
 
  ~~~bash
  git clone https://github.com/davirlima/ignite-feed.git
@@ -60,19 +69,23 @@ Esta é uma aplicação web de um escopo de um feed de uma rede social, com as f
   yarn dev
   ~~~
 
-## Interface:
+## :computer: Interfaces:
 
-* Desktop e Laptop:
-
-<img
-  src="https://user-images.githubusercontent.com/97968740/185650643-1f7ed693-68a6-44d8-8b4d-ab8ea88f2292.png"
-  alt="Interfaca da Aplicação Ignite Feed em Desktop e Laptop"
-/>
-
-* Mobile:
-
-<img
-  height="800px"
-  src="https://user-images.githubusercontent.com/97968740/185651198-2c773b8e-6e8c-4a72-b728-7efa13ecedb1.png"
-  alt="Interfaca da Aplicação Ignite Feed em Mobile"
-/>
+<div align="center">
+  <img
+   src="https://user-images.githubusercontent.com/97968740/186958740-f89fe11a-f890-4622-becd-8963a8cf1e2e.png"
+   alt="Interface da Aplicação Ignite Feed em Desktop e Laptop"
+   width=74%
+  />
+  <img
+   src="https://user-images.githubusercontent.com/97968740/186958817-bcb3a6e6-4f4c-4c27-834b-c3c658a09e6b.png"
+   alt="Interface da Aplicação Ignite Feed em Mobile"
+   width=25%
+  />
+  <img
+   src="https://user-images.githubusercontent.com/97968740/186959572-2d33eb49-af4e-4d2a-8d38-a5ce68ba34f2.gif"
+   alt="GIF demonstrativo da aplicação"
+   width=99%
+   align="center"
+  />
+</div>
