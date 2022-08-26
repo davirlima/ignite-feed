@@ -6,6 +6,7 @@
   grid-template-columns: 256px 1fr;
   gap: 2rem;
   align-items: flex-start;
+  min-height: calc(100vh - (4rem + (2 * 1.25rem)) - (3rem + 0.5rem) - 4rem);
 }
 
 @media (max-width: 768px) {

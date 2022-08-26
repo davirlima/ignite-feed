@@ -1,0 +1,26 @@
+.footer {
+  height: 3rem;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer img {
+  height: 100%;
+}
+
+/* footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+footer a,
+footer a img {
+  height: 100%;
+} */

@@ -4,6 +4,7 @@ import { Post } from "./components/Post";
 
 import "./global.css";
 import styles from "./App.module.css";
+import { Footer } from "./components/Footer";
 
 const posts = [
   {
@@ -45,6 +46,7 @@ export function App() {
           })}
         </main>
       </div>
+      <Footer />
     </div>
   );
 }
