@@ -37,8 +37,6 @@ Aplicação web de um protótipo de feed de uma rede social, utilizando *ReactJS
 
 ## :hammer: Funcionalidades:
 
-Converter texto em:
-
 - **Adicionar um comentário em um Post;**
 - **Remover o comentário criado;**
 - **Aplaudir um comentário (deixar um Like).**
